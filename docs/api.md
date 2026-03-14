@@ -2,7 +2,7 @@
 
 This file is generated for E2E parsing.
 
-**Document ID:** ojthc1n3dom-mmq076na
+**Document ID:** 1w453geibqh-mmq0rxv6
 
 This document contains a variety of concise, self-contained code examples across multiple programming languages, demonstrating common patterns, data structures, I/O, and control flow to exercise parsing in a realistic yet compact way.
 
@@ -10,14 +10,14 @@ Each example includes a short description followed by a fenced code block.
 
 Where helpful, examples may include brief variations in syntax or structure so the parser encounters a wider range of constructs across different ecosystems.
 
-## TypeScript: Typed User Model
+## Elixir: Enum Pipeline
 
-This example shows a strongly-typed user interface and a function that formats user info. It highlights TypeScript's type safety.
+Elixir pipeline that filters even numbers and inspects the result.
 
-```typescript
-interface User { id: number; name: string; active: boolean }
-function formatUser(u: User): string { return `${u.id}:${u.name}:${u.active}` }
-console.log(formatUser({ id: 1, name: 'Ada', active: true }));
+```elixir
+nums = 1..10 |> Enum.to_list()
+evens = Enum.filter(nums, fn n -> rem(n, 2) == 0 end)
+IO.inspect(evens)
 ```
 
 

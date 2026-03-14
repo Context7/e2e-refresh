@@ -2,7 +2,7 @@
 
 This file is generated for E2E parsing.
 
-**Document ID:** kq19ow9w6m-mmq076n6
+**Document ID:** gms6pqglc0a-mmq0rxv4
 
 This document contains a variety of concise, self-contained code examples across multiple programming languages, demonstrating common patterns, data structures, I/O, and control flow to exercise parsing in a realistic yet compact way.
 
@@ -10,29 +10,35 @@ Each example includes a short description followed by a fenced code block.
 
 Where helpful, examples may include brief variations in syntax or structure so the parser encounters a wider range of constructs across different ecosystems.
 
-## Bash: Count Files
+## C#: LINQ Query
 
-Counts files in the current directory using common shell tools.
+Filters and projects a sequence using C# LINQ. Demonstrates expressive collection manipulation.
 
-```bash
-FILES=$(ls | wc -l)
-echo "Files: $FILES"
+```csharp
+using System;
+using System.Linq;
+class Program {
+  static void Main(){
+    var nums = new[]{1,2,3,4,5};
+    var squares = nums.Where(n=>n%2==1).Select(n=>n*n);
+    Console.WriteLine(string.Join(",", squares));
+  }
+}
 ```
 
 
-## Elixir: Enum Pipeline
+## Scala: List Pipeline
 
-Elixir pipeline that filters even numbers and inspects the result.
+Uses Scala collections to filter and map a list with a clear pipeline.
 
-```elixir
-nums = 1..10 |> Enum.to_list()
-evens = Enum.filter(nums, fn n -> rem(n, 2) == 0 end)
-IO.inspect(evens)
+```scala
+object Main {
+  def main(args: Array[String]): Unit = {
+    val nums = List(1,2,3,4,5)
+    val oddsSquared = nums.filter(_ % 2 == 1).map(n => n*n)
+    println(oddsSquared)
+  }
+}
 ```
 
 
-
-
-## Updated Content
-
-This content was added for the refresh test.
