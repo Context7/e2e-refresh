@@ -2,7 +2,7 @@
 
 This file is generated for E2E parsing.
 
-**Document ID:** qxrmwaznhs-mmt24d1a
+**Document ID:** 0d6nkwyptl2l-mmt2xomj
 
 This document contains a variety of concise, self-contained code examples across multiple programming languages, demonstrating common patterns, data structures, I/O, and control flow to exercise parsing in a realistic yet compact way.
 
@@ -10,34 +10,28 @@ Each example includes a short description followed by a fenced code block.
 
 Where helpful, examples may include brief variations in syntax or structure so the parser encounters a wider range of constructs across different ecosystems.
 
-## PHP: JSON Response
+## Julia: Comprehension
 
-Outputs a JSON response in PHP for a simple API endpoint. Illustrates header setting and encoding.
+Julia list comprehension generating cubes of a range.
 
-```php
-<?php
-header('Content-Type: application/json');
-echo json_encode(['status' => 'ok', 'time' => time()]);
+```julia
+nums = 1:5
+cubes = [n^3 for n in nums]
+println(cubes)
 ```
 
 
-## Scala: List Pipeline
+## Kotlin: Data Class Copy
 
-Uses Scala collections to filter and map a list with a clear pipeline.
+Demonstrates Kotlin data classes and the copy method. Encourages immutable-style updates.
 
-```scala
-object Main {
-  def main(args: Array[String]): Unit = {
-    val nums = List(1,2,3,4,5)
-    val oddsSquared = nums.filter(_ % 2 == 1).map(n => n*n)
-    println(oddsSquared)
-  }
+```kotlin
+data class User(val id:Int, val name:String, val active:Boolean)
+fun main(){
+  val u1 = User(1, "Ada", true)
+  val u2 = u1.copy(active = false)
+  println(u2)
 }
 ```
 
 
-
-
-## Updated Content
-
-This content was added for the refresh test.
