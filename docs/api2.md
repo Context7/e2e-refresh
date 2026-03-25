@@ -2,7 +2,7 @@
 
 This file is generated for E2E parsing.
 
-**Document ID:** o6ulphq8l6-mn62q37i
+**Document ID:** yag6a2as38h-mn63sp6g
 
 This document contains a variety of concise, self-contained code examples across multiple programming languages, demonstrating common patterns, data structures, I/O, and control flow to exercise parsing in a realistic yet compact way.
 
@@ -10,13 +10,17 @@ Each example includes a short description followed by a fenced code block.
 
 Where helpful, examples may include brief variations in syntax or structure so the parser encounters a wider range of constructs across different ecosystems.
 
-## Bash: Count Files
+## Kotlin: Data Class Copy
 
-Counts files in the current directory using common shell tools.
+Demonstrates Kotlin data classes and the copy method. Encourages immutable-style updates.
 
-```bash
-FILES=$(ls | wc -l)
-echo "Files: $FILES"
+```kotlin
+data class User(val id:Int, val name:String, val active:Boolean)
+fun main(){
+  val u1 = User(1, "Ada", true)
+  val u2 = u1.copy(active = false)
+  println(u2)
+}
 ```
 
 
