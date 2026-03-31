@@ -2,7 +2,7 @@
 
 This file is generated for E2E parsing.
 
-**Document ID:** bpombetccnj-mneoyatl
+**Document ID:** uy7ukfptju-mneqctcf
 
 This document contains a variety of concise, self-contained code examples across multiple programming languages, demonstrating common patterns, data structures, I/O, and control flow to exercise parsing in a realistic yet compact way.
 
@@ -20,18 +20,14 @@ echo "Files: $FILES"
 ```
 
 
-## Haskell: Filter and Map
+## JavaScript: Sum Array Elements
 
-A minimal Haskell example filtering odd numbers and squaring them.
+This snippet demonstrates summing the numbers in an array using JavaScript's reduce. It showcases a concise, functional approach.
 
-```haskell
-main :: IO ()
-main = print $ map (^2) $ filter odd [1..10]
+```javascript
+const nums = [1, 2, 3, 4, 5];
+const total = nums.reduce((acc, n) => acc + n, 0);
+console.log(total);
 ```
 
 
-
-
-## Updated Content
-
-This content was added for the refresh test.
